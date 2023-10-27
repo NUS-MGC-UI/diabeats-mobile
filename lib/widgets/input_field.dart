@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class InputField extends StatelessWidget {
-  final String placeholder;
-  const InputField({super.key, required this.placeholder});
+class UsernameField extends StatelessWidget {
+  const UsernameField({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width * 0.80,
       padding: const EdgeInsets.all(15.0),
       child: Material(
         shape: RoundedRectangleBorder(
@@ -16,7 +16,7 @@ class InputField extends StatelessWidget {
         child: TextField(
           decoration: InputDecoration(
               contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              hintText: placeholder,
+              hintText: "Username",
               border: InputBorder.none,
               fillColor: const Color(0x00fbfbfb)),
         ),
