@@ -1,7 +1,9 @@
+import 'package:diabeats_mobile/diabeats_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const DiabeatsApp());
 }
 
 class MyApp extends StatelessWidget {
